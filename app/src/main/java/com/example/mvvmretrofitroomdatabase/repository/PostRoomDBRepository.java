@@ -17,6 +17,7 @@ public class PostRoomDBRepository {
         PostIntoRoomDatabase database = PostIntoRoomDatabase.getDatabase(application);
         postInfoDao = database.postInfoDao();
         mAllPosts = postInfoDao.getAllPosts();
+
     }
 
     public LiveData<List<ResultModel>> getAllPosts(){
